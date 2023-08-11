@@ -6,18 +6,23 @@ Original repo that was cloned: https://github.com/photonstorm/phaser3-project-te
 
 ## Steps to Run it:
 Clone the Project:
+
 `git clone https://github.com/ruqmuse/planning-poker.git`
 
-Navigate to the `client` directory in terminal and instal dependencies:
+Navigate to the `client` directory in the Terminal and install dependencies:
+
 `cd client`
+
 `npm install`
 
-To start the project, open the `client` directory in Terminal and run:
+To start the project, open the `client` directory in the Terminal and enter:
+
 `npm start`
 
 This should launch localhost:8080 with the game configured.
 
-In a new Terminal window, open the root `planning-poker` directory and run:
-`npm install --save express socket.io nodemon`
+In a new Terminal window, open the root `planning-poker` directory and install dependencies:
+
+`npm install`
 
 To start the server, run: `npm run start`
