@@ -6,7 +6,7 @@ const config = {
     parent: 'phaser-example',
     width: 1280,
     height: 780,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#fbfcff',
     scene: [Game]
 };
 

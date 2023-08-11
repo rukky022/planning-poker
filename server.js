@@ -16,9 +16,21 @@ io.on("connection", (socket) => {
         io.emit('isPlayerA');
     };
 
-    socket.on('cardPlayed', function (gameObject, isPlayerA) {
-        io.emit('cardPlayed', gameObject, isPlayerA);
+    socket.on('cardChosen', function (isPlayerA, playerChoice) {
+        io.emit('cardChosen', isPlayerA, playerChoice);
     });
+
+    socket.on('cardDeselected', function (isPlayerA) {
+        io.emit('cardDeselected', isPlayerA);
+    });
+
+    socket.on('revealCards', function() {
+        io.emit('revealCards');
+    });
+
+    socket.on('refreshGame', function() {
+        io.emit('refreshGame');
+    })
 
     socket.on('disconnect', function () {
         console.log('A user disconnected: ' + socket.id);
